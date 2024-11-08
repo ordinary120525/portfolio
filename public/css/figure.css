@@ -84,7 +84,7 @@
   align-items: center;
   color: #fff;
   cursor: pointer;
-  z-index: 99999999;
+  z-index: 99999999 !important;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -181,8 +181,8 @@
   align-items: center;
 }
 .nav-modal.active .submenu ul li {
-  width: 80vw;
-  height: 15vh;
+  width: 60vw;
+  height: 10vh;
   padding-bottom: 20px;
   display: flex;
 }
@@ -193,7 +193,7 @@
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 100px;
+  font-size: 50px;
   z-index: 999999999999999 !important;
   color: #ff4e4e;
 }
@@ -209,10 +209,28 @@
   .recording-indicator {
     width: 12px;
     height: 12px;
-    margin-right: 70px;
+    margin-right: 50px;
   }
   .menu {
-    margin-right: 20px;
-    font-size: 12px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .nav-modal.active .submenu ul li {
+    width: 90vw;
+    height: 10vh;
+  }
+  .nav-modal.active .submenu ul li a {
+    width: 20vw;
+    height: 10vh;
+    font-size: 20px;
+  }
+  .nav-modal.active .nav-modal-navi .recording-indicator {
+    width: 12px;
+    height: 12px;
+    margin-right: 50px;
+  }
+  .nav-modal.active .nav-modal-navi .close {
+    margin-right: 10px;
+    font-size: 16px;
   }
 }
