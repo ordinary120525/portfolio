@@ -42,8 +42,8 @@
 }
 .card p {
   color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 100;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
   font-style: normal;
   font-size: 16px;
   text-align: center;
@@ -103,7 +103,7 @@
 .close-btn {
   margin-bottom: 5px;
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   /* float: right; */
   cursor: pointer;
