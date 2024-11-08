@@ -1,7 +1,13 @@
 {
+  "rewrites": [
+    {
+      "source": "/videos/:match*",
+      "destination": "/vids/:match*"
+    }
+  ],
   "headers": [
     {
-      "source": "/vids/*.mp4",
+      "source": "/videos/*.mp4",
       "headers": [
         {
           "key": "Content-Type",
