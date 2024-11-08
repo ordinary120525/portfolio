@@ -61,13 +61,11 @@
 }
 .modal-body {
   position: fixed;
-  width: 1920px;
-  height: 1080px;
 }
 .video-wrap {
   position: fixed;
-  width: 70%;
-  height: 70%;
+  width: 1420px;
+  height: 780px;
   padding: 10px;
   top: 50%;
   left: 50%;

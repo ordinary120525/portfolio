@@ -92,7 +92,7 @@ window.addEventListener("load", () => {
   // 모달닫기 함수
   const closeModal = () => {
     videoModal.style.display = "none";
-    // video.pause();
+    video.pause();
     video.src = "";
     youtubeVideo.src = "";
   };
