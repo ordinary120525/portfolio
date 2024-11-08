@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
   const video = document.querySelector(".video-wrap video");
   const youtubeVideo = document.querySelector(".video-wrap iframe");
   const videoTitle = document.querySelector(".video-wrap p");
+  // console.log(videoModal);
 
   // json 파일 연동하여 카드 목록 생성
   const vidUrl = "data/video.json";
@@ -19,12 +20,12 @@ window.addEventListener("load", () => {
 
   fetch(vidUrl)
     .then((response) => {
-      //  console.log(response.json());
+      // console.log(response.json());
       return response.json();
     })
     .then((data) => {
       initState.videos = data; // 상태 업데이트
-      //  console.log(initState.videos);
+      // console.log(initState.videos);
       makeHtmlTag();
     })
     .catch((err) => {
@@ -37,10 +38,10 @@ window.addEventListener("load", () => {
     const tags = initState.videos
       .map((item) => {
         return `
-      <div class="card" 
-        data-video-src="${item.vidSrc || ""}" 
+      <div class="card"
+        data-video-src="${item.vidSrc || ""}"
         data-youtube-id="${item.youtubeId || ""}"
-        data-id="${item.id}" 
+        data-id="${item.id}"
         data-title="${item.title}" >
         <img
          class="thumbnail"
@@ -86,7 +87,7 @@ window.addEventListener("load", () => {
 
     videoTitle.textContent = title;
     videoModal.style.display = "block";
-    console.log("비디오 모달 열었습니다!", card);
+    // console.log("비디오 모달 열었습니다!", card);
   };
 
   // 모달닫기 함수
