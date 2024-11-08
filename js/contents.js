@@ -15,8 +15,8 @@ window.addEventListener("load", () => {
 
   // json 파일 연동하여 카드 목록 생성
   const vidUrl = "data/video.json";
-  console.log(vidUrl);
-  const thumbnailPath = "https://picsum.photos/250/350?random=";
+  // console.log(vidUrl);
+
   fetch(vidUrl)
     .then((response) => {
       //  console.log(response.json());
@@ -33,6 +33,7 @@ window.addEventListener("load", () => {
 
   // html 태그 생성 함수
   const makeHtmlTag = () => {
+    const thumbnailPath = "";
     const tags = initState.videos
       .map((item) => {
         return `
@@ -40,10 +41,10 @@ window.addEventListener("load", () => {
         data-video-src="${item.vidSrc || ""}" 
         data-youtube-id="${item.youtubeId || ""}"
         data-id="${item.id}" 
-        data-title="${item.title}">
+        data-title="${item.title}" >
         <img
          class="thumbnail"
-         src="${thumbnailPath}${item.id}"
+         src="${thumbnailPath}${item.thumbnail || ""}"
          alt="${item.title}"
         />
         <p>${item.title}</p>
