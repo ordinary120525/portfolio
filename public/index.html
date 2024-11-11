@@ -12,6 +12,8 @@
 
     <script src="js/header.js"></script>
     <script src="js/contents.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
   </head>
   <body>
     <div id="home" class="wrap">
@@ -20,6 +22,10 @@
         <video src="videos/video1.mp4" autoplay muted loop></video>
         <h1>PORTFOLIO</h1>
 
+        <div class="viewfinder">
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
         <!-- navigation -->
         <nav class="navi">
           <div class="recording-indicator"></div>
@@ -73,7 +79,7 @@
               <video controls>
                 <source src="videos/video2.mp4" />
               </video>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Haebangchon vlog</p>
             </div>
 
             <!-- content modal -->
@@ -100,21 +106,56 @@
           <div class="title">
             <h2>[WORK EXPERIENCE, SKILLS, CONTACT]</h2>
             <h1>ABOUT ME</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur voluptatibus corrupti, consectetur, ipsam cum soluta praesentium unde dignissimos provident aut similique quos voluptatem tempore iusto voluptas tenetur maxime reprehenderit adipisci?</p>
           </div>
-          <div class="section">
-            <h2>work experience</h2>
+          <div class="section1">
+            <h2>education</h2>
+            <div class="container">
+              <p>대구혜화여자고등학교 / 졸업</p>
+              <p>한국방송통신대학교 일본학과 / 졸업</p>
+            </div>
           </div>
-          <div class="section">
-            <h2>skills</h2>
+          <div class="section2">
+            <h2>experience</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <span>2024.01.01</span>
+            <p>Lorem, ipsum dolor.</p>
+            <span>2024.01.01</span>
+            <p>Lorem, ipsum dolor.</p>
+            <span>2024.01.01</span>
+            <p>Lorem, ipsum dolor.</p>
+            <span>2024.01.01</span>
+            <p>Lorem, ipsum dolor.</p>
+            <span>2024.01.01</span>
+            <p>Lorem, ipsum dolor.</p>
           </div>
-          <div class="section">
+          <div class="section3">
+            <div class="skill">
+              <p>Primiere Pro</p>
+              <div class="progress-bar">
+                <div class="progress html" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>After Effect</p>
+              <div class="progress-bar">
+                <div class="progress js" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+          <div id="contact" class="section4">
             <h2>contact</h2>
           </div>
         </div>
       </main>
 
       <!-- footer-->>
-      <footer id="contact" class="footer"></footer>
+      <footer class="footer">
+              <!-- video -->
+      <figure class="figure">
+        <video src="videos/video2.mp4" autoplay muted loop></video>
+        <span>copyright 2024. alison All rights reserved.</span>
+      </footer>
     </div>
   </body>
 </html>

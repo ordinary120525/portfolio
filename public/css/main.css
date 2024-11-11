@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #111;
 }
 #projects {
   position: relative;
@@ -38,7 +38,7 @@
 }
 #projects .title h1 {
   margin: 0;
-  color: #e22626;
+  color: #fa5656;
   opacity: 0.8;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  background-color: #fff;
+  background-color: #222;
 }
 #info .title {
   position: relative;
@@ -66,16 +66,126 @@
   align-items: center;
 }
 #info .title h2 {
-  color: #000;
+  color: #fff;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
 }
 #info .title h1 {
   margin: 0;
-  color: #e22626;
+  color: #fa5656;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-size: 80px;
+}
+#info .title p {
+  margin: 30px auto;
+  width: 400px;
+  /* height: 200px; */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+#info .section1 {
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#info .section1 h2 {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+#info .container {
+  position: relative;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#info .section2 {
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#info .section2 h2 {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+#info .section2 p {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+#info .section3 {
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+#info .section3 h2 {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+#info .section3 p {
+}
+
+#contact .section4 {
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .section4 h2 {
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+#contact .section4 p {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+.footer {
+}
+.footer > .figure {
+}
+.footer > .figure video {
+}
+.footer > .figure span {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1rem;
 }

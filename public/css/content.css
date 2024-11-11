@@ -23,12 +23,13 @@
   padding: 10px;
   padding-bottom: 50px;
   /* border: 1px solid #fff; */
-  background-color: #000;
+  background-color: #111;
   word-break: break-all;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
   border-radius: 20px;
+  /* z-index: 99999; */
 }
 .card:hover {
   transform: scale(1.05);
@@ -61,12 +62,9 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 999999;
   display: none;
 }
-/* .modal-body {
-  position: fixed;
-} */
 .video-wrap {
   position: fixed;
   width: 920px;
@@ -160,4 +158,5 @@
   font-style: normal;
   font-size: 16px;
   text-align: center;
+  margin-top: 20px;
 }
