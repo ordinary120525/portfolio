@@ -24,7 +24,7 @@ img {
   border: 0;
 }
 .wrap {
-  position: fixed;
+  position: relative;
   width: 100vw;
   height: auto;
   min-height: fit-content;
