@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&family=Teko:wght@300..700&display=swap");
 
 .main {
   position: relative;
@@ -90,102 +91,62 @@
   color: #fff;
   text-align: center;
 }
-#info .section1 {
+.section {
   position: relative;
   width: 600px;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
 }
-#info .section1 h2 {
+.section .text {
   position: relative;
   width: 200px;
-  height: auto;
 }
-#info .container {
+.section .container {
   position: relative;
   width: 400px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  padding: 0 20px;
+  font-size: 14px;
 }
-
-#info .section2 {
-  position: relative;
-  width: 600px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section .text h2 {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  color: #fff;
 }
-#info .section2 h2 {
-  position: relative;
-  width: 200px;
-  height: auto;
-}
-#info .section2 p {
-  position: relative;
-  width: 400px;
-  height: auto;
-}
-
-#info .section3 {
-  position: relative;
-  width: 600px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.progress-bar {
-  width: 100%;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-}
-
-.progress {
-  height: 10px;
-  background-color: #4caf50;
-  border-radius: 5px;
-}
-#info .section3 h2 {
-  position: relative;
-  width: 200px;
-  height: auto;
-}
-#info .section3 p {
-}
-
-#contact .section4 {
-  position: relative;
-  width: 600px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contact .section4 h2 {
-  position: relative;
-  width: 200px;
-  height: auto;
-}
-#contact .section4 p {
-  position: relative;
-  width: 400px;
-  height: auto;
-}
-
-.footer {
-}
-.footer > .figure {
-}
-.footer > .figure video {
-}
-.footer > .figure span {
+.container p {
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.container span {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 20px;
+}
+.skill p {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* 프로그래스 바의 기본 스타일 */
+.progress-bar {
+  width: 100%;
+  height: 5px; /* 높이 설정 */
+  background-color: #fff; /* 배경 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+  overflow: hidden; /* 내부 progress 요소가 바깥으로 넘치지 않도록 설정 */
+  margin: 10px 0; /* 프로그래스 바 간격 */
+}
+
+/* 프로그래스 바 진행도 스타일 */
+.progress {
+  height: 100%;
+  background-color: #fa5656; /* 진행도 색상 */
+  width: 0; /* 기본 너비는 0 */
+  transition: width 0.3s ease; /* 너비 변경 시 애니메이션 효과 */
+  border-radius: 10px 0 0 10px; /* 진행도의 왼쪽 모서리만 둥글게 */
 }
