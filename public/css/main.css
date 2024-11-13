@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&family=Teko:wght@300..700&display=swap");
 
+/* 메인 영역부터 푸터 영역까지 */
+
 .main {
   position: relative;
   width: 100%;
@@ -39,8 +41,7 @@
 }
 #projects .title h1 {
   margin: 0;
-  color: #fa5656;
-  opacity: 0.8;
+  color: #fff;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-size: 80px;
@@ -74,13 +75,7 @@
   font-style: normal;
   font-size: 1rem;
 }
-/* #info .title h1 {
-  margin: 0;
-  color: #fa5656;
-  font-family: "Racing Sans One", sans-serif;
-  font-weight: 400;
-  font-size: 80px;
-} */
+
 #about-title span {
   margin: 0;
   font-family: "Racing Sans One", sans-serif;
@@ -91,14 +86,14 @@
 
 .section {
   position: relative;
-  width: 500px;
+  width: 50vw;
   height: auto;
   display: flex;
   padding: 20px;
 }
 .section .text {
   position: relative;
-  width: 200px;
+  width: 20vw;
   padding: 20px;
   display: flex;
   justify-content: flex-end;
@@ -106,7 +101,7 @@
 }
 .section .container {
   position: relative;
-  width: 300px;
+  width: 30vw;
   padding: 20px;
   font-size: 14px;
 }
@@ -142,7 +137,7 @@
 
 /* 프로그래스 바의 기본 스타일 */
 .progress-bar {
-  width: 100%;
+  width: 80%;
   height: 5px; /* 높이 설정 */
   background-color: #fff; /* 배경 색상 */
   border-radius: 10px; /* 둥근 모서리 */

@@ -71,7 +71,10 @@
         <div id="projects" class="section">
           <div class="title">
             <h2>[film, typography, motion graphics]</h2>
-            <h1>PROJECTS</h1>
+            <h1 id="projects-title">
+              <span>P</span><span>R</span><span>O</span><span>J</span
+              ><span>E</span><span>C</span><span>T</span><span>S</span>
+            </h1>
           </div>
           <div class="contents-wrap">
             <div class="content">
@@ -113,7 +116,7 @@
         </div>
 
         <div id="info">
-          <div class="title">
+          <div id="info-title" class="title">
             <h2>[EDUCATION, EXPERIENCE, SKILLS, CONTACT]</h2>
             <h1 id="about-title">
               <span>A</span><span>B</span><span>O</span><span>U</span
@@ -136,8 +139,11 @@
             </div>
             <div class="container">
               <p>대구혜화여자고등학교 / 졸업</p>
+              <span>2005.03 - 2008.03</span>
               <p>서울종합예술학교 방송연예과 / 중퇴</p>
+              <span>2011.03 - 2012.02</span>
               <p>한국방송통신대학교 일본학과 / 졸업</p>
+              <span>2020.09 - 2024.08</span>
             </div>
           </div>
           <div class="section">
@@ -207,19 +213,32 @@
         </figure>
       </footer>
     </div>
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.to("#about-title span", {
-        scrollTrigger: {
-          trigger: "#about-title",
-          start: "top 50vh",
-          end: "bottom 50vh",
-          scrub: true,
-        },
-        color: "#e22626",
-        stagger: 0.2,
-      });
-    </script>
   </body>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to("#projects-title span", {
+      scrollTrigger: {
+        trigger: "#projects-title",
+        start: "top 50%",
+        end: "bottom 50%",
+        scrub: 1,
+        markers: true,
+      },
+      color: "#fa5656",
+      stagger: 1,
+    });
+
+    gsap.to("#about-title span", {
+      scrollTrigger: {
+        trigger: "#about-title",
+        start: "top 50%",
+        end: "bottom 50%",
+        scrub: 1,
+        markers: true,
+      },
+      color: "#fa5656",
+      stagger: 1,
+    });
+  </script>
 </html>
