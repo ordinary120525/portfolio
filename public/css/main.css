@@ -87,6 +87,7 @@
 .section {
   position: relative;
   width: 50vw;
+  min-width: 30vw;
   height: auto;
   display: flex;
   padding: 20px;
