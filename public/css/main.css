@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&family=Teko:wght@300..700&display=swap");
+@font-face {
+  font-family: "bm_hanna_airregular";
+  src: url("../fonts/bmhannaair_ttf.woff2") format("woff2"),
+    url("../fonts/bmhannaair_ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* 메인 영역부터 푸터 영역까지 */
 
@@ -13,11 +18,13 @@
   justify-content: center;
   align-items: center;
   background-color: #111;
+  overflow-x: hidden;
 }
 #projects {
   position: relative;
   width: 100%;
   height: auto;
+  min-height: 500px; /* 적절한 높이 값으로 수정 */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +40,12 @@
   align-items: center;
 }
 #projects .title h2 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 100;
@@ -40,17 +53,24 @@
   font-size: 16px;
 }
 #projects .title h1 {
+  position: relative;
   margin: 0;
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-size: 80px;
 }
 
-#info {
+#about {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 500px; /* 적절한 높이 값으로 수정 */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +79,7 @@
   background-color: #222;
   padding: 100px 0;
 }
-#info .title {
+#about .title {
   position: relative;
   width: 100%;
   height: 300px;
@@ -68,7 +88,13 @@
   justify-content: center;
   align-items: center;
 }
-#info .title h2 {
+#about .title h2 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 100;
@@ -76,25 +102,39 @@
   font-size: 1rem;
 }
 
-#about-title span {
+#about .title h1 {
+  position: relative;
   margin: 0;
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-size: 80px;
   color: #fff;
 }
 
+#about-title {
+  height: 80px;
+}
+
+.section-wrap {
+  position: relative;
+}
 .section {
   position: relative;
-  width: 50vw;
-  min-width: 30vw;
+  width: 70vw;
+  min-width: 50vw;
   height: auto;
   display: flex;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .section .text {
   position: relative;
-  width: 20vw;
+  width: 30vw;
+  min-width: 20vw;
   padding: 20px;
   display: flex;
   justify-content: flex-end;
@@ -102,45 +142,48 @@
 }
 .section .container {
   position: relative;
-  width: 30vw;
-  padding: 20px;
+  width: 40vw;
+  min-width: 30vw;
+  padding: 20px 40px;
   font-size: 14px;
 }
 .section .text > p {
   text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "bm_hanna_airregular", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #f5f5f5;
   margin-top: -5px;
 }
 .container p {
-  color: #fff;
-  font-family: "Barlow Condensed" "Nanum Square", sans-serif;
+  color: #f5f5f5;
+  font-family: "bm_hanna_airregular", sans-serif;
+  font-size: 0.8rem;
   margin-bottom: 10px;
 }
 .container span {
   display: inline-block; /* 또는 display: block */
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
+  color: #f5f5f5;
+  font-family: "bm_hanna_airregular", sans-serif;
   margin-bottom: 20px;
 }
 .skill p {
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
+  color: #f5f5f5;
+  font-family: "bm_hanna_airregular", sans-serif;
+  font-size: 1.1rem;
 }
 .icon {
   font-size: 1.8rem;
-  color: #fff;
+  color: #f5f5f5;
 }
 
 /* 프로그래스 바의 기본 스타일 */
 .progress-bar {
-  width: 80%;
+  width: 100px;
   height: 5px; /* 높이 설정 */
-  background-color: #fff; /* 배경 색상 */
+  background-color: #f5f5f5; /* 배경 색상 */
   border-radius: 10px; /* 둥근 모서리 */
   overflow: hidden; /* 내부 progress 요소가 바깥으로 넘치지 않도록 설정 */
   margin: 10px 0; /* 프로그래스 바 간격 */
