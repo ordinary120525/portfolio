@@ -55,8 +55,8 @@
 #projects .title h1 {
   position: relative;
   margin: 0;
-  width: 300px;
-  height: 100px;
+  max-width: 80%;
+  max-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,15 +104,15 @@
 #about .title h1 {
   position: relative;
   margin: 0;
-  width: 300px;
-  height: 100px;
+  max-width: 80%;
+  max-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
-  font-size: 100px;
+  font-size: 100;
 }
 
 .section-wrap {
@@ -192,4 +192,14 @@
   width: 0; /* 기본 너비는 0 */
   transition: width 0.3s ease; /* 너비 변경 시 애니메이션 효과 */
   border-radius: 10px 0 0 10px; /* 진행도의 왼쪽 모서리만 둥글게 */
+}
+
+/* 모바일 레이아웃 */
+@media screen and (max-width: 799px) {
+  #projects .title h1 {
+    font-size: 50px;
+  }
+  #about .title h1 {
+    font-size: 50px;
+  }
 }
