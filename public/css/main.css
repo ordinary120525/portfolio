@@ -29,6 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #111;
 }
 #projects .title {
   position: relative;
@@ -49,20 +50,20 @@
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
 }
 #projects .title h1 {
   position: relative;
   margin: 0;
   width: 300px;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 100px;
 }
 
 #about {
@@ -74,14 +75,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   background-color: #222;
-  padding: 100px 0;
+  /* margin-top: 100px; */
+  /* padding: 100px 0; */
 }
 #about .title {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,18 +105,19 @@
   position: relative;
   margin: 0;
   width: 300px;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
-  font-size: 80px;
-  color: #fff;
+  font-size: 100px;
 }
 
 .section-wrap {
   position: relative;
+  margin-bottom: 200px;
 }
 .section {
   position: relative;

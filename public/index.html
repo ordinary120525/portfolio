@@ -173,7 +173,7 @@
                     <div class="progress html" style="width: 90%"></div>
                   </div>
                 </div>
-                <div class="skill">
+                <div id="contact" class="skill">
                   <p>After Effect</p>
                   <div class="progress-bar">
                     <div class="progress js" style="width: 75%"></div>
@@ -181,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div id="contact" class="section">
+            <div class="section">
               <div class="text">
                 <p>contact</p>
               </div>
@@ -189,13 +189,15 @@
                 <p>nje718@naver.com</p>
                 <p>010-3287-3691</p>
                 <div class="icon">
-                  <a href="https://www.instagram.com/alison0718"
+                  <a href="https://www.instagram.com/alison0718" target="_blank"
                     ><i
                       class="fa-brands fa-instagram"
                       style="color: #ffffff"
                     ></i
                   ></a>
-                  <a href="https://www.youtube.com/@ordinary_light"
+                  <a
+                    href="https://www.youtube.com/@ordinary_light"
+                    target="_blank"
                     ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
                   ></a>
                 </div>
@@ -224,28 +226,38 @@
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to("#projects-title span", {
-      scrollTrigger: {
-        trigger: "#projects-title",
-        start: "top 50%",
-        end: "bottom 50%",
-        scrub: 1,
-        // markers: true,
-      },
-      color: "#fa5656",
-      stagger: 1,
-    });
+    function initializeScrollTrigger() {
+      gsap.to("#projects-title span", {
+        scrollTrigger: {
+          trigger: "#projects-title",
+          start: "top 50%",
+          end: "bottom 50%",
+          scrub: 1,
+          markers: true,
+          invalidateOnRefresh: true,
+        },
+        color: "#fa5656",
+        stagger: 1,
+      });
 
-    gsap.to("#about-title span", {
-      scrollTrigger: {
-        trigger: "#about-title",
-        start: "top 50%",
-        end: "bottom 50%",
-        scrub: 1,
-        // markers: true,
-      },
-      color: "#fa5656",
-      stagger: 0.1,
+      gsap.to("#about-title span", {
+        scrollTrigger: {
+          trigger: "#about-title",
+          start: "top 50%",
+          end: "bottom 50%",
+          scrub: 1,
+          markers: true,
+          invalidateOnRefresh: true,
+        },
+        color: "#fa5656",
+        stagger: 1,
+      });
+
+      ScrollTrigger.refresh(true);
+    }
+
+    window.addEventListener("load", () => {
+      initializeScrollTrigger();
     });
   </script>
 </html>
