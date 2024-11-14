@@ -197,9 +197,9 @@
 /* 모바일 레이아웃 */
 @media screen and (max-width: 799px) {
   #projects .title h1 {
-    font-size: 80vw;
+    font-size: 90vw;
   }
   #about .title h1 {
-    font-size: 80vw;
+    font-size: 90vw;
   }
 }
