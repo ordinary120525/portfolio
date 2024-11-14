@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link rel="stylesheet" href="css/loading.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/figure.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/scrolltotopbtn.css" />
 
+    <script src="js/loading.js"></script>
     <script src="js/header.js"></script>
     <script src="js/contents.js"></script>
+    <script src="js/scroll.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
@@ -23,6 +27,15 @@
     ></script>
   </head>
   <body>
+    <!-- 로딩 스크린 -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <!-- 실제 웹페이지 콘텐츠 -->
     <div id="home" class="wrap">
       <!-- video -->
       <figure class="figure">
@@ -222,6 +235,9 @@
         </figure>
       </footer>
     </div>
+    <div id="scrollToTopBtn" class="scroll-to-top">
+      <i class="fa-solid fa-angles-up fa-xl" style="color: #ffffff"></i>
+    </div>
   </body>
   <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -233,7 +249,7 @@
           start: "top 50%",
           end: "bottom 50%",
           scrub: 1,
-          markers: true,
+          // markers: true,
           invalidateOnRefresh: true,
         },
         color: "#fa5656",
@@ -246,7 +262,7 @@
           start: "top 50%",
           end: "bottom 50%",
           scrub: 1,
-          markers: true,
+          // markers: true,
           invalidateOnRefresh: true,
         },
         color: "#fa5656",

@@ -256,12 +256,15 @@
 }
 .nav-modal.active .submenu ul li a:hover {
   color: #fff;
+  font-size: 75px;
+  text-shadow: 3px 3px 3px #333;
+  transition: 0.7s;
 }
 
 /* 모바일 레이아웃 */
 @media screen and (max-width: 1099px) {
   .figure h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
   .rec {
     width: 100%;

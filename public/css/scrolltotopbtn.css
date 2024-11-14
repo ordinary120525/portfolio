@@ -1,0 +1,19 @@
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px;
+  font-size: 20px;
+  /* background-color: #2e2e2e; */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* 처음엔 숨기기 */
+  opacity: 1;
+  transition: opacity 0.3s;
+  /* box-shadow: 0 0 5px #fff; 수평, 수직, 흐림 정도, 색상 */
+}
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+}

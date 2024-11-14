@@ -1,0 +1,54 @@
+/* 로딩 스크린 전체 */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5; /* 까만 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; /* 처음에는 보이게 */
+  transition: opacity 3s ease; /* 2초 동안 서서히 사라지도록 */
+  z-index: 999999999999999999;
+}
+
+/* 로딩 애니메이션을 위한 원형 */
+.loader {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+/* 점 스타일 */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #444444;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* 점 애니메이션 */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
