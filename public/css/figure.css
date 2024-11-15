@@ -22,6 +22,12 @@
   left: 0;
   object-fit: cover;
   opacity: 0.8;
+  transform: scale(1.2); /* 처음에 10% 더 크게 설정 */
+  transition: transform 5s ease; /* 3초 동안 크기를 원래 크기로 줄임 */
+}
+/* 애니메이션이 끝난 후 원래 크기로 돌아가기 */
+.figure.active video {
+  transform: scale(1); /* 원래 크기로 돌아가도록 설정 */
 }
 
 .figure h1 {
