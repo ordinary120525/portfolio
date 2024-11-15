@@ -22,8 +22,8 @@
   left: 0;
   object-fit: cover;
   opacity: 0.8;
-  transform: scale(1.2); /* 처음에 10% 더 크게 설정 */
-  transition: transform 5s ease; /* 3초 동안 크기를 원래 크기로 줄임 */
+  transform: scale(1.3); /* 처음에 30% 더 크게 설정 */
+  transition: transform 3s ease; /* 5초 동안 크기를 원래 크기로 줄임 */
 }
 /* 애니메이션이 끝난 후 원래 크기로 돌아가기 */
 .figure.active video {
@@ -40,7 +40,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, 50px); /* 아래에서 위로 올라오도록 설정 */
-  animation: slide-up 3s forwards; /* 애니메이션 적용 */
+  transition: opacity 3s ease, transform 3s ease; /* 애니메이션 속성 */
 }
 
 /* 애니메이션 정의 */

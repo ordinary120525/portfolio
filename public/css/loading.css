@@ -5,12 +5,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #f5f5f5; /* 까만 배경 */
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 1; /* 처음에는 보이게 */
-  transition: opacity 3s ease; /* 2초 동안 서서히 사라지도록 */
+  /* transition: opacity 3s ease; 2초 동안 서서히 사라지도록 */
   z-index: 999999999999999999;
 }
 
