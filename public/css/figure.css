@@ -30,10 +30,23 @@
   font-weight: 400;
   font-size: 120px;
   color: #e22626;
-  opacity: 0.8;
+  opacity: 0; /* 초기 상태에서 보이지 않도록 설정 */
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50px); /* 아래에서 위로 올라오도록 설정 */
+  animation: slide-up 3s forwards; /* 애니메이션 적용 */
+}
+
+/* 애니메이션 정의 */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50px); /* 처음에는 아래로 */
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%); /* 최종적으로 원래 위치로 */
+  }
 }
 
 /* 뷰파인더 스타일 */
@@ -242,11 +255,12 @@
 }
 .nav-modal.active .submenu ul li {
   width: 60vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
+  margin-bottom: 30px;
 }
 .nav-modal.active .submenu ul li a {
-  position: absolute;
+  position: relative;
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -256,9 +270,27 @@
 }
 .nav-modal.active .submenu ul li a:hover {
   color: #fff;
-  font-size: 75px;
-  text-shadow: 3px 3px 3px #333;
+  font-size: 72px;
   transition: 0.7s;
+}
+/* 밑줄 효과를 위한 가상 요소 */
+.nav-modal.active .submenu ul li a::after {
+  content: ""; /* 가상 요소 생성 */
+  position: absolute; /* 절대 위치 설정 */
+  bottom: 0; /* 밑줄을 텍스트 하단에 위치시킴 */
+  left: 0; /* 왼쪽 끝에서 시작 */
+  width: 100%; /* 밑줄의 기본 길이는 0% */
+  height: 2px; /* 밑줄 두께 */
+  background-color: #fff; /* 밑줄 색상 */
+  transform: scaleX(0); /* 초기 상태: 밑줄이 보이지 않음 */
+  transform-origin: bottom right; /* 애니메이션 시작 위치 */
+  transition: transform 0.3s ease-out; /* 애니메이션 효과 */
+}
+
+/* 호버 시 밑줄 애니메이션 */
+.nav-modal.active .submenu ul li a:hover::after {
+  transform: scaleX(1); /* 밑줄이 왼쪽에서 오른쪽으로 확장 */
+  transform-origin: bottom left; /* 애니메이션 끝 위치 */
 }
 
 /* 모바일 레이아웃 */
@@ -280,12 +312,17 @@
   }
   .nav-modal.active .submenu ul li {
     width: 60vw;
-    height: 10vh;
+    height: 5vh;
     display: flex;
+    margin-bottom: 30px;
   }
   .nav-modal.active .submenu ul li a {
     font-size: 2rem;
   }
+  .nav-modal.active .submenu ul li a:hover {
+    font-size: 2.3rem;
+  }
+
   .nav-modal.active .nav-modal-navi .recording-indicator {
     width: 16px;
     height: 16px;
