@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
   // 로딩 스크린이 사라진 후 3초 뒤에 애니메이션 시작
   setTimeout(() => {
     // 3초 뒤에 h1 애니메이션 시작
-    h1Element.style.opacity = "1"; // h1 태그 보이게 설정
+    h1Element.style.opacity = "0.8"; // h1 태그 보이게 설정
     h1Element.style.transform = "translate(-50%, -50%)"; // h1 제자리로 이동
 
     // 비디오 크기가 10% 더 커지며 3초 동안 원래 크기로 줄어듬
