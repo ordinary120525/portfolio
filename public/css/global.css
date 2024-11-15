@@ -26,6 +26,7 @@ img {
 .wrap {
   position: relative;
   width: 100%;
+  min-width: 400px;
   height: auto;
   min-height: fit-content;
   display: flex;
