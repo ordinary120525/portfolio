@@ -278,6 +278,7 @@
   color: #fff;
   font-size: 72px;
   transition: 0.7s;
+  text-shadow: 2px 2px 50px #ff9f9f;
 }
 /* 밑줄 효과를 위한 가상 요소 */
 .nav-modal.active .submenu ul li a::after {
@@ -297,6 +298,7 @@
 .nav-modal.active .submenu ul li a:hover::after {
   transform: scaleX(1); /* 밑줄이 왼쪽에서 오른쪽으로 확장 */
   transform-origin: bottom left; /* 애니메이션 끝 위치 */
+  box-shadow: 2px 2px 50px #ff9f9f;
 }
 
 /* 모바일 레이아웃 */
