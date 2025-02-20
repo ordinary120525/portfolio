@@ -115,40 +115,54 @@
   font-size: 100px;
 }
 
-.about-wrap {
+#about-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  justify-items: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
-  width: 2000px; /* 부모 요소가 전체 너비를 차지하도록 설정 */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 150px 0;
+  position: relative; /* 기준점 설정 */
 }
 
-.video-wrap {
-  display: flex;
-  min-width: 300px; /* 최소 너비 지정 */
-  width: 1000px;
-  justify-items: flex-start;
-}
-
-.text-wrap {
-  display: flex;
-  min-width: 300px; /* 최소 너비 지정 */
-  width: 1000px;
-  justify-items: flex-end;
-}
-
-.vid iframe {
-  position: relative;
-  min-width: 720px;
-  min-height: 1280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%; /* 부모 요소 너비를 초과하지 않도록 설정 */
+#video-wrap {
+  position: relative; /* fixed → relative */
+  width: 45%;
+  max-width: 600px;
   height: auto;
+  justify-content: flex-start;
 }
 
-.vid p {
+#text-wrap {
+  position: relative;
+  width: 45%;
+  max-width: 600px;
+  justify-content: flex-end;
+}
+
+.interview {
+  position: relative; 
+  width: 100%; /* 부모 요소 기준 */
+  max-width: 720px;
+  height: auto;
+  text-align: center;
+  margin-top: 30px; /* 적절한 여백 추가 */
+  justify-content: center;
+}
+
+.interview video {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.interview p {
   color: #fff;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
@@ -199,7 +213,7 @@
   color: #f5f5f5;
   font-family: "bm_hanna_airregular", sans-serif;
   font-size: 0.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .container span {
   display: inline-block; /* 또는 display: block */
@@ -246,9 +260,22 @@
   }
 }
 
+/* 모바일 반응형 */
 @media (max-width: 799px) {
-  .about-wrap {
-    flex-direction: column; /* 세로 정렬 */
+  #about-wrap {
+    flex-direction: column;
     align-items: center;
   }
+
+  #video-wrap,
+  #text-wrap,
+  .interview {
+    width: 100%;
+    max-width: none;
+  }
+
+  #text-wrap{
+    margin-top: 100px;
+  }
 }
+
