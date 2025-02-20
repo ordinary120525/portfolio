@@ -154,11 +154,11 @@
   justify-content: center;
 }
 
-.interview video {
+.interview iframe {
   position: relative;
   width: 100%;
   max-width: 720px;
-  height: auto;
+  height: 960px;
   border-radius: 10px;
 }
 
