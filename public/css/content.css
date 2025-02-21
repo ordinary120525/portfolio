@@ -160,7 +160,7 @@
 /* 모바일 레이아웃 */
 @media screen and (max-width: 799px) {
   .content-vid iframe {
-    width: 540px;
-    height: 340px;
+    width: 340px;
+    height: 192px;
   }
 }
