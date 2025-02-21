@@ -158,7 +158,7 @@
 }
 
 /* 모바일 레이아웃 */
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 400px) {
   .content-vid iframe {
     width: 320px;
     height: 180px;
