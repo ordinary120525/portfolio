@@ -276,4 +276,9 @@
   #text-wrap {
     margin-top: 100px;
   }
+
+  .interview iframe {
+    width: 540px;
+    height: 850px;
+  }
 }
