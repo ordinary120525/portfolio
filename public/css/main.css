@@ -117,7 +117,7 @@
 
 #about-wrap {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
@@ -145,7 +145,7 @@
 }
 
 .interview {
-  position: relative; 
+  position: relative;
   width: 100%; /* 부모 요소 기준 */
   max-width: 720px;
   height: auto;
@@ -260,7 +260,6 @@
   }
 }
 
-/* 모바일 반응형 */
 @media (max-width: 799px) {
   #about-wrap {
     flex-direction: column;
@@ -274,8 +273,7 @@
     max-width: none;
   }
 
-  #text-wrap{
+  #text-wrap {
     margin-top: 100px;
   }
 }
-

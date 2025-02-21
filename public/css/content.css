@@ -156,3 +156,11 @@
   text-align: center;
   margin-top: 20px;
 }
+
+/* 모바일 레이아웃 */
+@media screen and (max-width: 799px) {
+  .content-vid iframe {
+    width: 720px;
+    height: 450px;
+  }
+}
