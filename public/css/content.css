@@ -163,4 +163,8 @@
     width: 540px;
     height: 340px;
   }
+  .interview iframe {
+    width: 540px;
+    height: 960px;
+  }
 }
