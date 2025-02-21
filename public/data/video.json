@@ -50,23 +50,23 @@
   },
   {
     "id": 8,
-    "thumbnail": "img/img8.jpg",
-    "vidSrc": "",
-    "youtubeId": "hwStJPeqcE8",
-    "title": "vlog"
-  },
-  {
-    "id": 9,
     "thumbnail": "img/img10.jpg",
     "vidSrc": "",
     "youtubeId": "CnH2W_c9D7k",
     "title": "vlog"
   },
   {
-    "id": 10,
-    "thumbnail": "img/img11.png",
+    "id": 9,
+    "thumbnail": "img/img11.jpg",
     "vidSrc": "",
     "youtubeId": "BibqgjbrCxg",
+    "title": "vlog"
+  },
+  {
+    "id": 10,
+    "thumbnail": "img/img13.png",
+    "vidSrc": "",
+    "youtubeId": "l3oDDhutKgg",
     "title": "interview"
   }
 ]
